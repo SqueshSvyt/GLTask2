@@ -1,0 +1,3 @@
+C:/Users/Admin/Desktop/C++ Projects/ServerStation/cmake-build-debug/CMakeFiles/ServerStation.dir
+C:/Users/Admin/Desktop/C++ Projects/ServerStation/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/C++ Projects/ServerStation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
