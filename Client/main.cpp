@@ -2,7 +2,7 @@
 #include <winsock2.h>
 #include "ms_act.h"
 
-#define _SERVER_IP "127.0.0.1"
+#define _SERVER_IP "192.168.0.174"
 #define _PORT 27027
 
 #pragma comment(lib, "ws2_32.lib")

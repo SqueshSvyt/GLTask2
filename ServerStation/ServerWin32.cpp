@@ -1,44 +1,38 @@
-#include <iostream>
-#include <fstream>
-#include <winsock2.h>
+#include "Server.h"
 
-#define _PORT 27027
-
-#pragma comment(lib, "ws2_32.lib")
-
-int main() {
+int Run_server(const int& port) {
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "Failed to initialize winsock." << std::endl;
-        return 1;
+        return -1;
     }
 
     SOCKET serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket == INVALID_SOCKET) {
         std::cerr << "Failed to create socket." << std::endl;
-        return 1;
+        return -1;
     }
 
     sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_addr.s_addr = ADDR_ANY;
-    serverAddr.sin_port = htons(_PORT);
+    serverAddr.sin_port = htons(port);
 
     if (bind(serverSocket, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) {
         std::cerr << "Failed to bind socket." << std::endl;
         closesocket(serverSocket);
         WSACleanup();
-        return 1;
+        return -1;
     }
 
     if (listen(serverSocket, 1) == SOCKET_ERROR) {
         std::cerr << "Listen failed." << std::endl;
         closesocket(serverSocket);
         WSACleanup();
-        return 1;
+        return -1;
     }
 
-    std::cout << "Server listening on port " << _PORT <<"..." << std::endl;
+    std::cout << "Server listening on port " << port <<"..." << std::endl;
 
     SOCKET clientSocket;
     sockaddr_in clientAddr;
@@ -49,7 +43,7 @@ int main() {
         std::cerr << "Failed to accept client connection." << std::endl;
         closesocket(serverSocket);
         WSACleanup();
-        return 1;
+        return -1;
     }
 
     std::cout << "Connected!" << '\n';
