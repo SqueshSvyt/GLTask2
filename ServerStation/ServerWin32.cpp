@@ -50,7 +50,7 @@ int Run_server(const int& port) {
 
     std::ofstream logFile("../mouse_activity.log", std::ios::app);
 
-    logFile << "Take info from: " << inet_ntoa(clientAddr.sin_addr) << '\n';
+    logFile << "Take info from: " << inet_ntoa(clientAddr.sin_addr) << ":" << ntohs(clientAddr.sin_port) << '\n';
 
     while (true) {
         char buffer[256];

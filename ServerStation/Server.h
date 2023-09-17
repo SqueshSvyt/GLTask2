@@ -5,12 +5,17 @@
 #include <fstream>
 
 #ifdef _WIN32
+//Windows part
 #include <winsock2.h>
 
 #pragma comment(lib, "ws2_32.lib")
 
 #elif __UNIX__
-//Unix part include
+//Unix part
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
 
 #endif
 
