@@ -1,6 +1,4 @@
-#include "ms_act.h"
-
-#include <windows.h>
+#include "App.h"
 
 std::string Get_mouse_activity(){
     POINT cursor;

@@ -82,13 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/ch_ms_ac.cpp">
+		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/App_WIN32.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/main.cpp">
+		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/mouse_wingui.cpp">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/ms_act.h">
+		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/start.cpp">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="C:/Users/olegs/Desktop/GLTask/GLTask2/Client/CMakeLists.txt">

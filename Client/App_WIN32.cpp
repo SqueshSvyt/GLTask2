@@ -1,13 +1,7 @@
 #include <iostream>
-#include <winsock2.h>
-#include "ms_act.h"
+#include "App.h"
 
-#define _SERVER_IP "192.168.0.174"
-#define _PORT 27027
-
-#pragma comment(lib, "ws2_32.lib")
-
-int main() {
+int Connect_to_server(const char* &ip, const int &port) {
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "Failed to initialize Winsock." << std::endl;
@@ -23,8 +17,8 @@ int main() {
 
     sockaddr_in serverAddr;
     serverAddr.sin_family = AF_INET;
-    serverAddr.sin_addr.s_addr = inet_addr(_SERVER_IP);
-    serverAddr.sin_port = htons(_PORT);
+    serverAddr.sin_addr.s_addr = inet_addr(ip);
+    serverAddr.sin_port = htons(port);
 
     if (connect(clientSocket, (struct sockaddr*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) {
         std::cerr << "Failed to connect to server." << std::endl;
@@ -32,7 +26,10 @@ int main() {
         WSACleanup();
         return 1;
     }
+
     std::cout << "Connected!" << '\n';
+
+    //Limit to send
     int counter = 120;
     while (true) {
         std::string data = Get_mouse_activity();

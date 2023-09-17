@@ -1,7 +1,0 @@
-# ninja log v5
-5344	6012	7165994018295419	ServerStation.exe	4c94c37af49599e7
-1	13012	7166822855575330	CMakeFiles/ServerStation.dir/start.cpp.obj	b41f8e5c2064beb3
-13056	17049	7166822895996629	CMakeFiles/ServerStation.dir/ServerWin32.cpp.obj	fc0623b5bb8b70ab
-17049	17986	7166822905060659	ServerStation.exe	33b3038c2156d6c4
-12	9629	7166823872098990	CMakeFiles/ServerStation.dir/start.cpp.obj	b41f8e5c2064beb3
-9632	10627	7166823881404087	ServerStation.exe	33b3038c2156d6c4

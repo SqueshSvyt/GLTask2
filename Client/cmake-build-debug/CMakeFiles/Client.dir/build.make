@@ -68,49 +68,65 @@ include CMakeFiles/Client.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Client.dir/flags.make
 
-CMakeFiles/Client.dir/main.cpp.obj: CMakeFiles/Client.dir/flags.make
-CMakeFiles/Client.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/Client.dir/main.cpp.obj: CMakeFiles/Client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Client.dir/main.cpp.obj"
-	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Client.dir/main.cpp.obj -MF CMakeFiles\Client.dir\main.cpp.obj.d -o CMakeFiles\Client.dir\main.cpp.obj -c C:\Users\olegs\Desktop\GLTask\GLTask2\Client\main.cpp
+CMakeFiles/Client.dir/start.cpp.obj: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/start.cpp.obj: ../start.cpp
+CMakeFiles/Client.dir/start.cpp.obj: CMakeFiles/Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Client.dir/start.cpp.obj"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Client.dir/start.cpp.obj -MF CMakeFiles\Client.dir\start.cpp.obj.d -o CMakeFiles\Client.dir\start.cpp.obj -c C:\Users\olegs\Desktop\GLTask\GLTask2\Client\start.cpp
 
-CMakeFiles/Client.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/main.cpp.i"
-	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\olegs\Desktop\GLTask\GLTask2\Client\main.cpp > CMakeFiles\Client.dir\main.cpp.i
+CMakeFiles/Client.dir/start.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/start.cpp.i"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\olegs\Desktop\GLTask\GLTask2\Client\start.cpp > CMakeFiles\Client.dir\start.cpp.i
 
-CMakeFiles/Client.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/main.cpp.s"
-	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\olegs\Desktop\GLTask\GLTask2\Client\main.cpp -o CMakeFiles\Client.dir\main.cpp.s
+CMakeFiles/Client.dir/start.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/start.cpp.s"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\olegs\Desktop\GLTask\GLTask2\Client\start.cpp -o CMakeFiles\Client.dir\start.cpp.s
 
-CMakeFiles/Client.dir/ch_ms_ac.cpp.obj: CMakeFiles/Client.dir/flags.make
-CMakeFiles/Client.dir/ch_ms_ac.cpp.obj: ../ch_ms_ac.cpp
-CMakeFiles/Client.dir/ch_ms_ac.cpp.obj: CMakeFiles/Client.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Client.dir/ch_ms_ac.cpp.obj"
-	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Client.dir/ch_ms_ac.cpp.obj -MF CMakeFiles\Client.dir\ch_ms_ac.cpp.obj.d -o CMakeFiles\Client.dir\ch_ms_ac.cpp.obj -c C:\Users\olegs\Desktop\GLTask\GLTask2\Client\ch_ms_ac.cpp
+CMakeFiles/Client.dir/App_WIN32.cpp.obj: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/App_WIN32.cpp.obj: ../App_WIN32.cpp
+CMakeFiles/Client.dir/App_WIN32.cpp.obj: CMakeFiles/Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Client.dir/App_WIN32.cpp.obj"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Client.dir/App_WIN32.cpp.obj -MF CMakeFiles\Client.dir\App_WIN32.cpp.obj.d -o CMakeFiles\Client.dir\App_WIN32.cpp.obj -c C:\Users\olegs\Desktop\GLTask\GLTask2\Client\App_WIN32.cpp
 
-CMakeFiles/Client.dir/ch_ms_ac.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/ch_ms_ac.cpp.i"
-	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\olegs\Desktop\GLTask\GLTask2\Client\ch_ms_ac.cpp > CMakeFiles\Client.dir\ch_ms_ac.cpp.i
+CMakeFiles/Client.dir/App_WIN32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/App_WIN32.cpp.i"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\olegs\Desktop\GLTask\GLTask2\Client\App_WIN32.cpp > CMakeFiles\Client.dir\App_WIN32.cpp.i
 
-CMakeFiles/Client.dir/ch_ms_ac.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/ch_ms_ac.cpp.s"
-	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\olegs\Desktop\GLTask\GLTask2\Client\ch_ms_ac.cpp -o CMakeFiles\Client.dir\ch_ms_ac.cpp.s
+CMakeFiles/Client.dir/App_WIN32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/App_WIN32.cpp.s"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\olegs\Desktop\GLTask\GLTask2\Client\App_WIN32.cpp -o CMakeFiles\Client.dir\App_WIN32.cpp.s
+
+CMakeFiles/Client.dir/mouse_wingui.cpp.obj: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/mouse_wingui.cpp.obj: ../mouse_wingui.cpp
+CMakeFiles/Client.dir/mouse_wingui.cpp.obj: CMakeFiles/Client.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Client.dir/mouse_wingui.cpp.obj"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Client.dir/mouse_wingui.cpp.obj -MF CMakeFiles\Client.dir\mouse_wingui.cpp.obj.d -o CMakeFiles\Client.dir\mouse_wingui.cpp.obj -c C:\Users\olegs\Desktop\GLTask\GLTask2\Client\mouse_wingui.cpp
+
+CMakeFiles/Client.dir/mouse_wingui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Client.dir/mouse_wingui.cpp.i"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\olegs\Desktop\GLTask\GLTask2\Client\mouse_wingui.cpp > CMakeFiles\Client.dir\mouse_wingui.cpp.i
+
+CMakeFiles/Client.dir/mouse_wingui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Client.dir/mouse_wingui.cpp.s"
+	"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\olegs\Desktop\GLTask\GLTask2\Client\mouse_wingui.cpp -o CMakeFiles\Client.dir\mouse_wingui.cpp.s
 
 # Object files for target Client
 Client_OBJECTS = \
-"CMakeFiles/Client.dir/main.cpp.obj" \
-"CMakeFiles/Client.dir/ch_ms_ac.cpp.obj"
+"CMakeFiles/Client.dir/start.cpp.obj" \
+"CMakeFiles/Client.dir/App_WIN32.cpp.obj" \
+"CMakeFiles/Client.dir/mouse_wingui.cpp.obj"
 
 # External object files for target Client
 Client_EXTERNAL_OBJECTS =
 
-Client.exe: CMakeFiles/Client.dir/main.cpp.obj
-Client.exe: CMakeFiles/Client.dir/ch_ms_ac.cpp.obj
+Client.exe: CMakeFiles/Client.dir/start.cpp.obj
+Client.exe: CMakeFiles/Client.dir/App_WIN32.cpp.obj
+Client.exe: CMakeFiles/Client.dir/mouse_wingui.cpp.obj
 Client.exe: CMakeFiles/Client.dir/build.make
 Client.exe: CMakeFiles/Client.dir/linklibs.rsp
 Client.exe: CMakeFiles/Client.dir/objects1.rsp
 Client.exe: CMakeFiles/Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Client.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\olegs\Desktop\GLTask\GLTask2\Client\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Client.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Client.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

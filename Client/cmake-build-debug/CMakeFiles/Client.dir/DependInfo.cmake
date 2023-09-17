@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/olegs/Desktop/GLTask/GLTask2/Client/ch_ms_ac.cpp" "CMakeFiles/Client.dir/ch_ms_ac.cpp.obj" "gcc" "CMakeFiles/Client.dir/ch_ms_ac.cpp.obj.d"
-  "C:/Users/olegs/Desktop/GLTask/GLTask2/Client/main.cpp" "CMakeFiles/Client.dir/main.cpp.obj" "gcc" "CMakeFiles/Client.dir/main.cpp.obj.d"
+  "C:/Users/olegs/Desktop/GLTask/GLTask2/Client/App_WIN32.cpp" "CMakeFiles/Client.dir/App_WIN32.cpp.obj" "gcc" "CMakeFiles/Client.dir/App_WIN32.cpp.obj.d"
+  "C:/Users/olegs/Desktop/GLTask/GLTask2/Client/mouse_wingui.cpp" "CMakeFiles/Client.dir/mouse_wingui.cpp.obj" "gcc" "CMakeFiles/Client.dir/mouse_wingui.cpp.obj.d"
+  "C:/Users/olegs/Desktop/GLTask/GLTask2/Client/start.cpp" "CMakeFiles/Client.dir/start.cpp.obj" "gcc" "CMakeFiles/Client.dir/start.cpp.obj.d"
   )
 
 # Targets to which this target links.

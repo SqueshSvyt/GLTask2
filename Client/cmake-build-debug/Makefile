@@ -128,53 +128,77 @@ Client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/build
 .PHONY : Client/fast
 
-ch_ms_ac.obj: ch_ms_ac.cpp.obj
-.PHONY : ch_ms_ac.obj
+App_WIN32.obj: App_WIN32.cpp.obj
+.PHONY : App_WIN32.obj
 
 # target to build an object file
-ch_ms_ac.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/ch_ms_ac.cpp.obj
-.PHONY : ch_ms_ac.cpp.obj
+App_WIN32.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/App_WIN32.cpp.obj
+.PHONY : App_WIN32.cpp.obj
 
-ch_ms_ac.i: ch_ms_ac.cpp.i
-.PHONY : ch_ms_ac.i
+App_WIN32.i: App_WIN32.cpp.i
+.PHONY : App_WIN32.i
 
 # target to preprocess a source file
-ch_ms_ac.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/ch_ms_ac.cpp.i
-.PHONY : ch_ms_ac.cpp.i
+App_WIN32.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/App_WIN32.cpp.i
+.PHONY : App_WIN32.cpp.i
 
-ch_ms_ac.s: ch_ms_ac.cpp.s
-.PHONY : ch_ms_ac.s
+App_WIN32.s: App_WIN32.cpp.s
+.PHONY : App_WIN32.s
 
 # target to generate assembly for a file
-ch_ms_ac.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/ch_ms_ac.cpp.s
-.PHONY : ch_ms_ac.cpp.s
+App_WIN32.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/App_WIN32.cpp.s
+.PHONY : App_WIN32.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+mouse_wingui.obj: mouse_wingui.cpp.obj
+.PHONY : mouse_wingui.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+mouse_wingui.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/mouse_wingui.cpp.obj
+.PHONY : mouse_wingui.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+mouse_wingui.i: mouse_wingui.cpp.i
+.PHONY : mouse_wingui.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/main.cpp.i
-.PHONY : main.cpp.i
+mouse_wingui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/mouse_wingui.cpp.i
+.PHONY : mouse_wingui.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+mouse_wingui.s: mouse_wingui.cpp.s
+.PHONY : mouse_wingui.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/main.cpp.s
-.PHONY : main.cpp.s
+mouse_wingui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/mouse_wingui.cpp.s
+.PHONY : mouse_wingui.cpp.s
+
+start.obj: start.cpp.obj
+.PHONY : start.obj
+
+# target to build an object file
+start.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/start.cpp.obj
+.PHONY : start.cpp.obj
+
+start.i: start.cpp.i
+.PHONY : start.i
+
+# target to preprocess a source file
+start.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/start.cpp.i
+.PHONY : start.cpp.i
+
+start.s: start.cpp.s
+.PHONY : start.s
+
+# target to generate assembly for a file
+start.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Client.dir\build.make CMakeFiles/Client.dir/start.cpp.s
+.PHONY : start.cpp.s
 
 # Help Target
 help:
@@ -185,12 +209,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Client
-	@echo ... ch_ms_ac.obj
-	@echo ... ch_ms_ac.i
-	@echo ... ch_ms_ac.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... App_WIN32.obj
+	@echo ... App_WIN32.i
+	@echo ... App_WIN32.s
+	@echo ... mouse_wingui.obj
+	@echo ... mouse_wingui.i
+	@echo ... mouse_wingui.s
+	@echo ... start.obj
+	@echo ... start.i
+	@echo ... start.s
 .PHONY : help
 
 
