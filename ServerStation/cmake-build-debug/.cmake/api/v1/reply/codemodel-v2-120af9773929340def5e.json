@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/olegs/Desktop/GLTask/GLTask2/ServerStation/cmake-build-debug",
-		"source" : "C:/Users/olegs/Desktop/GLTask/GLTask2/ServerStation"
+		"build" : "C:/Users/Admin/Desktop/GLTask2/ServerStation/cmake-build-debug",
+		"source" : "C:/Users/Admin/Desktop/GLTask2/ServerStation"
 	},
 	"version" : 
 	{

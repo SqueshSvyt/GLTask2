@@ -22,7 +22,7 @@ int main(){
             }
             break;
         case 'N':
-            std::cout << '\n' << "exit...";
+            std::cout << '\n' << "Exit...";
             return 0;
         default:
             std::cout << "Unknown command!";

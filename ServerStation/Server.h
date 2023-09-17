@@ -10,12 +10,13 @@
 
 #pragma comment(lib, "ws2_32.lib")
 
-#elif __UNIX__
-//Unix part
+#elif unix
+//Linux part
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
+#include <cstring>
 
 #endif
 
