@@ -1,3 +1,4 @@
+#include <iostream>
 #include "App.h"
 
 int Connect_to_server(const char* &ip, const int &port) {

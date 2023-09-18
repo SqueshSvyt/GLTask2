@@ -15,7 +15,7 @@ elseif(UNIX)
     include_directories(${X11_INCLUDE_DIR})
 
     list(APPEND target_lib pthread ${LIB_X11})
-    list(APPEND client_sources App_UNIX.cpp mouse_x_server.cpp)
+    list(APPEND client_sources App_linux.cpp mouse_x_server.cpp)
 endif()
 
 add_executable(Client ${client_sources})

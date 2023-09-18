@@ -1,7 +1,7 @@
 #ifndef CLIENT_APP_H
 #define CLIENT_APP_H
 
-#include <string>
+#include <iostream>
 
 #ifdef _WIN32
 //Network

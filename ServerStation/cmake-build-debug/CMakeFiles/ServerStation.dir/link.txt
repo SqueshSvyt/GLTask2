@@ -1,3 +1,0 @@
-"G:\programs\Clion\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ServerStation.dir/objects.a
-"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\ar.exe" qc CMakeFiles\ServerStation.dir/objects.a @CMakeFiles\ServerStation.dir\objects1.rsp
-"G:\programs\Clion\CLion 2022.2.4\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\ServerStation.dir/objects.a -Wl,--no-whole-archive -o ServerStation.exe -Wl,--out-implib,libServerStation.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ServerStation.dir\linklibs.rsp

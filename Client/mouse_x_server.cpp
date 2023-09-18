@@ -1,5 +1,7 @@
 #include "App.h"
 
+//Cursor broken for Debian and event don`t work
+
 std::string Get_mouse_activity() {
     Display* display = XOpenDisplay(nullptr);
     std::string data = "";
