@@ -19,6 +19,7 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <cstring>
+
 //Read mouse info
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>

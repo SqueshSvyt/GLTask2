@@ -10,7 +10,11 @@ if(WIN32)
     list(APPEND target_lib ws2_32)
     list(APPEND client_sources App_WIN32.cpp mouse_wingui.cpp)
 elseif(UNIX)
-    list(APPEND target_lib pthread)
+    find_package(X11 REQUIRED)
+    find_library(LIB_X11 X11)
+    include_directories(${X11_INCLUDE_DIR})
+
+    list(APPEND target_lib pthread ${LIB_X11})
     list(APPEND client_sources App_UNIX.cpp mouse_x_server.cpp)
 endif()
 

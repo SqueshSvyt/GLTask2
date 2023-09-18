@@ -2,6 +2,7 @@
 #include "App.h"
 
 int Connect_to_server(const char* &ip, const int &port) {
+
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "Failed to initialize Winsock." << std::endl;

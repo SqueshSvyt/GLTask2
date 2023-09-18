@@ -1,6 +1,7 @@
 #include "App.h"
 
-int Connect_to_server(const char* ip, const int port) {
+int Connect_to_server(const char* &ip, const int &port) {
+
     int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
         std::cerr << "Failed to create socket." << std::endl;
@@ -25,7 +26,7 @@ int Connect_to_server(const char* ip, const int port) {
     while (true) {
         std::string data = Get_mouse_activity();
         send(clientSocket, data.c_str(), data.size(), 0);
-        sleep(500);
+        usleep(500000);
         if (counter == 0) break;
         counter--;
     }
