@@ -8,7 +8,7 @@ int main(){
     //Basic interface
     char cm;
     std::cout << "Mouse activity server: " << '\n';
-    std::cout << "Do you want start server[Y/N]: ";
+    std::cout << "Do you want start server[Y/N]: " << '\n';
     std::cin >> cm;
     switch (cm) {
         case 'Y':
