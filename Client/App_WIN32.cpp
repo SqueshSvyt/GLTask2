@@ -30,8 +30,8 @@ int Connect_to_server(const char* &ip, const int &port) {
 
     std::cout << "Connected!" << '\n';
 
-    //Limit to send
-    int counter = 120;
+    //Limit to send(10 min send)
+    int counter = 1200;
     while (true) {
         std::string data = Get_mouse_activity();
         send(clientSocket, data.c_str(), data.size(), 0);

@@ -39,15 +39,17 @@ int Run_server(const int& port) {
         return 1;
     }
 
-    std::ofstream logFile("mouse_activity.txt");
+    std::ofstream logFile("./mouse_activity.log");
     logFile << "Get info from: " << inet_ntoa(clientAddr.sin_addr) << ":" << ntohs(clientAddr.sin_port) << '\n';
 
     while (true) {
         char buffer[256];
         int bytesRead = recv(clientSocket, buffer, sizeof(buffer), 0);
+
         if (bytesRead <= 0) {
-            break; // Connection closed or error
+            break;
         }
+
         buffer[bytesRead] = '\0';
         std::string str(buffer);
         logFile << str << '\n';
