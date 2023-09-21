@@ -13,3 +13,4 @@ make
 Run ./ServerStation
 To run client on linux you need Xlib11 work with XServer: 
 You can downloand using this command in bash: sudo apt install libx11-dev 
+To run client2.0 use sudo because its read info from dev files
