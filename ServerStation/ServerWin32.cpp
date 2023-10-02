@@ -48,7 +48,7 @@ int Run_server(const int& port) {
 
     std::cout << "Connected!" << '\n';
 
-    std::ofstream logFile("../mouse_activity.log", std::ios::app);
+    std::ofstream logFile("../mouse_activity.log", std::ios::app); // Different path from linux
 
     logFile << "Take info from: " << inet_ntoa(clientAddr.sin_addr) << ":" << ntohs(clientAddr.sin_port) << '\n';
 

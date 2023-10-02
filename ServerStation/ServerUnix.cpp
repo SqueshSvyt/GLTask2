@@ -1,8 +1,9 @@
 #include "Server.h"
+#include <filesystem>
 
 int Run_server(const int& port) {
 
-    int serverSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    int serverSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP); // Socket should be wrapped by a class
 
     if (serverSocket == -1) {
         std::cerr << "Failed to create socket: " << strerror(errno) << '\n';
@@ -39,7 +40,7 @@ int Run_server(const int& port) {
         return 1;
     }
 
-    std::ofstream logFile("./mouse_activity.log");
+    std::ofstream logFile("./mouse_activity.log", std::ios::app);
     logFile << "Get info from: " << inet_ntoa(clientAddr.sin_addr) << ":" << ntohs(clientAddr.sin_port) << '\n';
 
     while (true) {
@@ -53,11 +54,12 @@ int Run_server(const int& port) {
         buffer[bytesRead] = '\0';
         std::string str(buffer);
         logFile << str << '\n';
+        // std::cout << "Wriiten log to file" << std::filesystem::current_path() / "mouse_activity.log" << std::endl;
         std::cout << str << '\n';
     }
 
     logFile.close();
-    close(clientSocket);
+    close(clientSocket); // Why not shutdown?
     close(serverSocket);
 
     return 0;

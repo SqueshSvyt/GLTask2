@@ -1,0 +1,7 @@
+Readme may be extended, please use mardown language
+Provide general cmake file to build server and client
+Check how to use branches in git and move client or client2.0 to separate branch
+
+files that contain main function should be named main.cpp
+RMK LMK don't work
+Add build directory to gitignore

@@ -3,7 +3,7 @@
 
 int Connect_to_server(const char* &ip, const int &port) {
 
-    WSADATA wsaData;
+    WSADATA wsaData; // May be wrapped by a class
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
         std::cerr << "Failed to initialize Winsock." << std::endl;
         return 1;
@@ -30,6 +30,7 @@ int Connect_to_server(const char* &ip, const int &port) {
 
     std::cout << "Connected!" << '\n';
 
+    // general functionality may be moved to common file
     //Limit to send(10 min send)
     int counter = 1200;
     while (true) {

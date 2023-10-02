@@ -1,7 +1,7 @@
 #include <iostream>
 #include "App.h"
 
-int Connect_to_server(const char* &ip, const int &port) {
+int Connect_to_server(const char* &ip, const int &port) { // Connect to server gets mouse activity
 
     int clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
@@ -22,16 +22,16 @@ int Connect_to_server(const char* &ip, const int &port) {
 
     std::cout << "Connected!" << std::endl;
 
-    std::string ActiveKey = "";
+    std::string ActiveKey = ""; // I don't see locking of this variable
     std::thread Mouse_Activity(checkMouseEventshelp, std::ref(ActiveKey));
 
     // Limit to send
-    int counter = 1200;
+    int counter = 1200; // for loop will look better
     while (1) {
         //Read mouse cursor
         std::string data = Get_mouse_activity();
 
-        usleep(500000);
+        usleep(500000); // chrono sleep
 
         std::string temp = ActiveKey;
         data += temp;
@@ -41,7 +41,7 @@ int Connect_to_server(const char* &ip, const int &port) {
         counter--;
     }
 
-    Mouse_Activity.detach();
+    Mouse_Activity.detach(); // looks suspicious
 
     close(clientSocket);
 
